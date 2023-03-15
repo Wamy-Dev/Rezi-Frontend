@@ -48,7 +48,7 @@ import Xbox360 from './icons/xbox360.png';
 
 const Client = instantMeiliSearch(
   "https://search.rezi.one",
-  "9f8a5afecff04b5e8956d38507fb23b133c7115a0478deb92f839ff5adbd2fb6",
+  "d3e7e2eb5388b0f6a8dfe0939c5e9c139e2fe8a59697a68e989d4fb1c8dd16f2",
   {
     primaryKey: "id"
   }
