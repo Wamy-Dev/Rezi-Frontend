@@ -39,15 +39,13 @@ const CustPagination = ({ currentRefinement, nbPages, refine, createURL, total }
           sx={{ borderRadius: "10px" }}
         >
           <AlertTitle>Rezi has more results, I promise</AlertTitle>
-            Rezi actually have over 250k results, but it is limited to 40 pages of results. Please refine your search to get more results.
+            Rezi actually has over 250k results, but it is limited to 40 pages of results. Please refine your search to get more results.
         </Alert>
       </Box>
     ) : null}
     </>
   )
 }
-  
-
 
 const CustomPagination = connectPagination(CustPagination);
 export default CustomPagination;
