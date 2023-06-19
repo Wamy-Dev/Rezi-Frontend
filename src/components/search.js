@@ -152,9 +152,12 @@ function Hit({hit}){
 
 const Results = connectStateResults(
   ({ searchState, searchResults, children, loaded}) =>
-  searchResults  ? (
+  searchResults ? (
     searchResults.nbHits !== 0 ? (
-      children
+      <>
+        <Hits hitComponent={Hit} />
+        <CustomPagination defaultRefinement={1} paddingLeft={20} total={searchResults.nbHits}/>
+      </>
     ) : (
       loaded ? (
         <Box sx={{ width: "100%", maxWidth: 450, paddingTop: "20px" }}>
@@ -204,10 +207,7 @@ function Search() {
             />
           </div>
           <div>
-            <Results loaded={loaded}>
-              <Hits hitComponent={Hit} />
-              <CustomPagination defaultRefinement={1} paddingLeft={20} />
-            </Results>
+            <Results loaded={loaded}/>
           </div>
         </InstantSearch>
       </center>
