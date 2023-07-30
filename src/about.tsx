@@ -191,7 +191,7 @@ function About() {
                 </Typography>
                 <Typography variant="body1" align="left" paddingLeft="10%" paddingRight="10%" paddingTop="40px">
                     The Rezi database is updated every 24 hours (00:00 GMT+2). If a new game just came out, please wait at least that long before searching for it.
-                    Please also bear in mind that newer games may not be on the host websites yet (not being cracked or leaked yet) and they will not show up in the search results.
+                    Please also bear in mind that newer games may not be on the host websites yet (not being cracked or leaked yet) and they will not show up in the search results. If you want updates when the database is updated, please join the <a href="https://discord.gg/47SnjxgBFb" style={{ color: "inherit"}}> Rezi Discord server.</a>
                 </Typography>
                 <Typography variant="body1" align="left" paddingLeft="10%" paddingRight="10%" paddingTop="40px">
                     Rezi now allows you to play some of your searched games directly in your browser with the help of <a href="https://emulatorjs.org/" style={{ color: "inherit"}}> EmulatorJS!</a>
@@ -200,7 +200,7 @@ function About() {
                 </Typography>
                 <Typography variant="body1" align="left" paddingLeft="10%" paddingRight="10%" paddingTop="40px">
                     If you want a game, and it's not showing up, please make an issue on <a href="https://github.com/Wamy-Dev/ReziWebsite/issues/new" style={{ color: "inherit"}}> the Github</a>
-                    {" "} and I will do my best to get it available asap. Also, if you would like a source to be added to the database, please make an issue on the Github as well.
+                    {" "} and I will do my best to get it available asap. Also, if you would like a source to be added to the database, please make an issue on the Github as well. If you come across any dead links, please report them to me on the Discord server or on the Github.
                 </Typography>
                 <Typography variant="body1" align="left" paddingLeft="10%" paddingRight="10%" paddingTop="40px">
                     The Rezi API is free to use by all. If you are a developer and want to use it, please read the docs <a href="https://docs.rezi.one" style={{ color: "inherit"}}> here.</a>
