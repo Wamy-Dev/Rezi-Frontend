@@ -14,6 +14,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemIcon from '@mui/material/ListItemIcon';
+import Link from "@mui/material/Link";
 import Tooltip from '@mui/material/Tooltip';
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import { ThemeProvider } from "@mui/material/styles";
@@ -127,11 +128,18 @@ function Hit({hit}){
             </ListItemIcon>
           </Tooltip>
           </ClickAwayListener>
-          <ListItemText
-            key={hit.id}
-            sx={{ color: "white", listStyleType: "none", marginRight: "5px" }}
-            primary={<Highlight attribute="title" hit={hit} />}
-          />
+          <Link href={hit.igdb_url} target="_blank" rel="noreferrer" color="#fff">
+            <div style={{
+              display: "flex",
+              flexDirection: "row",
+            }}>
+              <ListItemText
+                key={hit.id}
+                sx={{ color: "white", listStyleType: "none", marginRight: "5px" }}
+                primary={<Highlight attribute="title" hit={hit} />}
+              />
+            </div>
+          </Link>
           {hit.playable ? (
             <Tooltip title="Play on emulator">
               <IconButton
