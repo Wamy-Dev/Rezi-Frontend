@@ -140,7 +140,7 @@ function Hit({hit}){
               />
             </div>
           </Link>
-          {hit.playable ? (
+          {hit.playable === true ? (
             <Tooltip title="Play on emulator">
               <IconButton
               onClick={(e) => {window.open(`/play?type=${hit.core}&link=${hit.link}&bios=${hit.bios}&title=${hit.title}`, "newwindow", "width=640,height=500"); return false}
