@@ -46,6 +46,8 @@ import ps2 from './icons/ps2.png';
 import ps3 from './icons/ps3.png';
 import XboxOrg from './icons/xboxorg.png';
 import Xbox360 from './icons/xbox360.png';
+import DownloadIcon from '@mui/icons-material/Download';
+import Typography from '@mui/material/Typography';
 
 const Client = instantMeiliSearch(
   "https://search.rezi.one",
@@ -56,6 +58,7 @@ const Client = instantMeiliSearch(
 );
 function Hit({hit}){
   const [open, setOpen] = React.useState(false);
+  console.log(hit)
   const handleTooltipClose = () => {
     setOpen(false);
   };
@@ -81,7 +84,7 @@ function Hit({hit}){
             <Tooltip title="Go to download">
             <a href={hit.link} target="_blank" rel="noreferrer">
               <IconButton edge="end">
-                <OpenInNewIcon />
+                <DownloadIcon />
               </IconButton>
             </a>
             </Tooltip>
@@ -122,24 +125,24 @@ function Hit({hit}){
                   case "Playstation 3": return <img src={ps3} alt={hit.icon} width='32' height='32' />;
                   case "Xbox Original": return <img src={XboxOrg} alt={hit.icon} width='32' height='32' />;
                   case "Xbox 360": return <img src={Xbox360} alt={hit.icon} width='32' height='32' />;
-                  default: return <img src={Default} alt={hit.icon} width='32' height='32' />;
+                  default: return <img src={Default} alt={hit.title} width='32' height='32' />;
                 }
               })()}
             </ListItemIcon>
           </Tooltip>
           </ClickAwayListener>
-          <Link href={hit.igdb_url} target="_blank" rel="noreferrer" color="#fff">
-            <div style={{
-              display: "flex",
-              flexDirection: "row",
-            }}>
+            <div>
               <ListItemText
                 key={hit.id}
                 sx={{ color: "white", listStyleType: "none", marginRight: "5px" }}
                 primary={<Highlight attribute="title" hit={hit} />}
               />
+              <Link href={hit.igdb_url} target="_blank" rel="noreferrer" color="#fff">
+                <Typography variant="caption" gutterBottom>
+                  Game Info
+                </Typography>
+              </Link>
             </div>
-          </Link>
           {hit.playable === true ? (
             <Tooltip title="Play on emulator">
               <IconButton
