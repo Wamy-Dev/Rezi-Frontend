@@ -58,7 +58,6 @@ const Client = instantMeiliSearch(
 );
 function Hit({hit}){
   const [open, setOpen] = React.useState(false);
-  console.log(hit)
   const handleTooltipClose = () => {
     setOpen(false);
   };
