@@ -66,14 +66,13 @@ function Hit({hit}){
   };
   return (
   <ThemeProvider theme={Theme}>
-    <Box sx={{ width: "100%", maxWidth: 450 }}>
+    <Box sx={{ width: "100%", maxWidth: 450, height: 100 }}>
       <List sx={{ paddingLeft: 0 }}>
         <ListItem
           key={hit.id}
           sx={{
             borderRadius: "10px",
-            minHeight: 70,
-            maxHeight: 80,
+            height: 90,
             overflow: "hidden",
             borderStyle: "solid",
             borderColor: "#646464",
@@ -133,14 +132,23 @@ function Hit({hit}){
             <div>
               <ListItemText
                 key={hit.id}
-                sx={{ color: "white", listStyleType: "none", marginRight: "5px" }}
+                sx={{ color: "white", listStyleType: "none", marginRight: "5px", maxHeight: "50px", overflow: "hidden" }}
                 primary={<Highlight attribute="title" hit={hit} />}
               />
-              <Link href={hit.igdb_url} target="_blank" rel="noreferrer" color="#fff">
-                <Typography variant="caption" gutterBottom>
-                  Game Info
+              <div style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+              }}>
+                <Link href={hit.igdb_url} target="_blank" rel="noreferrer" color="#fff">
+                  <Typography variant="caption" gutterBottom>
+                    Game Info
+                  </Typography>
+                </Link>
+                <Typography variant="caption" sx={{ opacity: 60}}>
+                  {hit.site}
                 </Typography>
-              </Link>
+              </div>
             </div>
           {hit.playable === true ? (
             <Tooltip title="Play on emulator">
