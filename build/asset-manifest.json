@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.962fc8b5.css",
-    "main.js": "/static/js/main.0fac9ca7.js",
-    "static/media/404girl.png": "/static/media/404girl.edf5c561533f2675ee83.png",
+    "main.js": "/static/js/main.9262c7b4.js",
+    "static/media/404girl.png": "/static/media/404girl.816fdf4038da83a0971e.png",
     "static/media/inter-all-400-normal.woff": "/static/media/inter-all-400-normal.8c804432e8c67741aac0.woff",
     "static/media/inter-latin-ext-400-normal.woff2": "/static/media/inter-latin-ext-400-normal.3a7a76525d98d25962eb.woff2",
     "static/media/rezilogo.png": "/static/media/rezilogo.852dff50102cade49af4.png",
@@ -14,10 +14,10 @@
     "static/media/inter-vietnamese-400-normal.woff2": "/static/media/inter-vietnamese-400-normal.789afb71d327988e2fc8.woff2",
     "index.html": "/index.html",
     "main.962fc8b5.css.map": "/static/css/main.962fc8b5.css.map",
-    "main.0fac9ca7.js.map": "/static/js/main.0fac9ca7.js.map"
+    "main.9262c7b4.js.map": "/static/js/main.9262c7b4.js.map"
   },
   "entrypoints": [
     "static/css/main.962fc8b5.css",
-    "static/js/main.0fac9ca7.js"
+    "static/js/main.9262c7b4.js"
   ]
 }

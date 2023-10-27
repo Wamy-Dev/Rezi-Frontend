@@ -1,20 +1,20 @@
 body {
-    background-color: #222222;
+  background-color: #222222;
 }
 ul {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 .ais-Highlight-highlighted {
-    background-color: #f5a804;
-    border-radius: 5px;
+  background-color: #f5a804;
+  border-radius: 5px;
 }
 .MuiPagination-ul {
-    justify-content: center;
+  justify-content: center;
 }
 .MuiListItem-root:hover {
-    background-color: #333232;
+  background-color: #333232;
 }
 .MuiTypography-root {
-    color: #ffffff;
+  color: #ffffff;
 }
