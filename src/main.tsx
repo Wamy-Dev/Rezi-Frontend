@@ -1,6 +1,7 @@
 import Search from "./components/search";
 import * as React from "react";
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import ReziLogo from "./rezilogo.png";
 import Grid from "@mui/material/Grid";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -23,6 +24,27 @@ function Main() {
       <Grid container spacing={2}>
         <Grid item xs={2}></Grid>
         <Grid item xs={8}>
+          <center>
+            <a href="https://torbox.app" target="_blank" rel="noreferrer" style={{
+              textDecoration: "none",
+              color: "inherit"
+            }}>
+              <Box sx={{
+                borderRadius: "10px",
+                borderStyle: "solid",
+                borderColor: "#646464",
+                borderWidth: "1px",
+                padding: "5px",
+                // backgroundColor: "#646464",
+              }}>
+                <Typography variant="h6" component="div" style={{color: "white"}}>
+                  Download torrents fast using TorBox! Try for free now at <a href="https://torbox.app" target="_blank" rel="noreferrer" style={{
+                    color: "#04BF8A"
+                  }}>TorBox.app</a>
+                </Typography>
+              </Box>
+            </a>
+          </center>
           <center>
             <a href="/">
               <img src={ReziLogo} alt="Rezi Logo" width="200" height="200" />
